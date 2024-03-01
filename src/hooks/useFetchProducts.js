@@ -18,7 +18,7 @@ export const useFetchProducts = (searchText) => {
 
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [searchText]);
 
   return {
     products,

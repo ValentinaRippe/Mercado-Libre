@@ -1,23 +1,25 @@
-import { useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
-import { useFetchProducts } from "../../hooks/useFetchProducts";
+import { useEffect, useState } from "react";
+import { useLocation, useSearchParams } from "react-router-dom";
+import { ListProducts } from "../../components/listProducts/ListProducst";
+import { Searcher } from "../../components/searcher/Searcher";
+import "./Search.scss";
 
 export const Search = () => {
-  const [searcParams] = useSearchParams();
-  const { products, isLoading } = useFetchProducts("");
+  const { search } = useLocation();
+  const [searchParams, setSearhParams] = useSearchParams();
+  const [searchText, setSearchText] = useState("");
 
-  useEffect(() => {
-    console.log(searcParams.entries());
-  });
+  const onSearchValueChange = (e) => {
+    setSearchText(e);
+  };
+
+  useEffect(() => {}, [searchText]);
   return (
     <>
-      <div>Search</div>
-      {isLoading ? "cargando..." : null}
-      <ul>
-        {products.map((item) => (
-          <li key={item.id}>{item.title}</li>
-        ))}
-      </ul>
+      <div>
+        <Searcher onSearchValueChange={onSearchValueChange} />
+      </div>
+      <ListProducts searchText={searchText} />
     </>
   );
 };
