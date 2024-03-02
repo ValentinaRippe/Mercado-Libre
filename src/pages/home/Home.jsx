@@ -2,7 +2,6 @@ import "./Home.scss";
 export const Home = () => {
   return (
     <>
-      <section className="banner"></section>
       <div class="sponsor-container-images">
         <img
           className="sponsor-picture"

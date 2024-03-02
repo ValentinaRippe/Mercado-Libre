@@ -9,8 +9,8 @@ export const useFetchSearchProducts = (searchText) => {
   const getProducts = async () => {
     setProducts([]);
     setIsLoading(true);
-    const res = await getSearchProducts(searchText);
     try {
+      const res = await getSearchProducts(searchText);
       setProducts(res.items);
       setCategories(res.categories)
       setIsLoading(false);

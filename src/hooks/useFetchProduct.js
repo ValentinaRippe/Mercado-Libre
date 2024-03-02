@@ -8,8 +8,8 @@ export const useFetchProduct = (id) => {
     const getProduct = async () => {
         setProduct({});
         setIsLoading(true);
-        const res = await getProductById(id);
         try {
+            const res = await getProductById(id);
             setProduct(res);
             setIsLoading(false);
         } catch (err) {
