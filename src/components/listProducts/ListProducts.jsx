@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useFetchSearchProducts } from "../../hooks/useFetchSearchProducts";
-import { CardProduct } from "../cardProduct/CardProduct";
-import { Loader } from "../loader/Loader";
-import { NotFound } from "../notFound/NotFound";
+import { CardProduct } from "../CardProduct/CardProduct";
+import { Loader } from "../Loader/Loader";
+import { NotFound } from "../NotFound/NotFound";
 import "./ListProducts.scss";
 
 export const ListProducts = ({ param }) => {

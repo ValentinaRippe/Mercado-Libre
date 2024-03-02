@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Loader } from "../../components/loader/Loader";
-import { NotFound } from "../../components/notFound/NotFound";
+import { Loader } from "../../components/Loader/Loader";
+import { NotFound } from "../../components/NotFound/NotFound";
 import { useFetchProduct } from "../../hooks/useFetchProduct";
 import { formatNumber } from "../../utils/formatPrice";
 import "./Detail.scss";

@@ -5,7 +5,7 @@ import {
   useSearchParams,
 } from "react-router-dom";
 import logo from "../../assets/logo.svg";
-import { Searcher } from "../searcher/Searcher";
+import { Searcher } from "../Searcher/Searcher";
 import "./Header.scss";
 export const Header = () => {
   const navigate = useNavigate();
