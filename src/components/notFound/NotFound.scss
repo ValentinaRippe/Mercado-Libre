@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+.notfound {
+  display: flex;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  width: max-content;
+  .notfound-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .notfound-icon {
+    display: contents;
+  }
+}

@@ -1,0 +1,54 @@
+.banner {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.cupons {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  width: 100%;
+  a {
+    width: 45%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  .carousel-item {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .cupons {
+    a {
+      width: 35%;
+    }
+  }
+
+  .carousel {
+    .carousel-item {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

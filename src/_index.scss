@@ -1,5 +1,8 @@
+$main-color: #ffe600;
+$main-color-opacity: #ffe6009d;
 $blue: #3483fa;
-$font-family: "Proxima Nova", -apple-system, "Helvetica Neue", helvetica, roboto, arial, sans-serif;
+$font-family: "Proxima Nova", -apple-system,
+  "Helvetica Neue", helvetica, roboto, arial, sans-serif;
 
 // Links
 $link-hover: #1259c3;
@@ -15,7 +18,7 @@ $timeline: #dcdcdc;
 // Item
 $item-info-color: rgb(51 51 51);
 $item-info-background: rgb(255 255 255 / 70%);
-$item-shipping-free-color: #00a650;
+$item-shipping-free-color: #00d265;
 $item-installment-free-color: #00a650;
 $item-min-height: 314px;
 $item-max-height: 370px;
@@ -25,6 +28,7 @@ $item-height-mobile: 230px;
 $font-regular: 300;
 $font-weight-semibold: 600;
 $font-size-mid: 20px;
+$font-size-big: 35px;
 $item-shadow: 32px;
 $item-width: 224px;
 
@@ -49,15 +53,11 @@ $transition-duration: 0.1s;
 $transition-timing-function: ease-out;
 $transition-visibility-delay: 0.1s;
 
-// Loyalty
-$partner-name-color: rgb(255 255 255 / 60%);
-$partner-kicker-image: #bfbfbf;
-$main-slider-background: #fff159;
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-family;
 }
 
 body,
@@ -70,7 +70,6 @@ html,
 body {
   border-collapse: collapse;
   display: table;
-  background-color: #fff;
-  font-family: $font-family;
+  background-color: $home-background;
   table-layout: fixed;
 }

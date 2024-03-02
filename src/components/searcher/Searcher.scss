@@ -1,0 +1,35 @@
+@import "../../index";
+.form-search {
+  width: 80%;
+  display: flex;
+  input {
+    height: 30px;
+    width: 100%;
+    border: transparent;
+    padding-left: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    height: 30px;
+    padding: 0 5px;
+    border: transparent;
+    cursor: pointer;
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .form-search {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-search {
+    width: 50%;
+  }
+}
