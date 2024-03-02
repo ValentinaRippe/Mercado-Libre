@@ -23,8 +23,9 @@ export const Searcher = ({ onSearchValueChange }) => {
         placeholder="Buscar..."
         value={searchValue}
         onChange={onInputChange}
+        data-testid="value-search"
       />
-      <button type="submit">
+      <button data-testid="search" type="submit">
         <img src={iconSearch} alt="Buscar" />
       </button>
     </form>

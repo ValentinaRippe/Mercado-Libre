@@ -6,7 +6,7 @@ export const Home = () => {
       <a
         href="https://listado.mercadolibre.com.co/_Deal_hot-sale-sony"
         target="_blank"
-        class="banner"
+        className="banner"
       >
         <img
           className="sponsor-picture"
@@ -36,7 +36,7 @@ export const Home = () => {
         <a
           href="https://www.mercadolibre.com.co/ofertas/landing-ofertashs#DEAL_ID=MCO20270&S=landingHubhot-sale&V=11&T=carousel&L=CARSOLO-POR-HOY&deal_print_id=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e&c_id=carousel&c_element_order=1&c_campaign=CARSOLO-POR-HOY&c_uid=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e"
           target="_blank"
-          class="carousel-item"
+          className="carousel-item"
         >
           <img
             decoding="async"
@@ -47,7 +47,7 @@ export const Home = () => {
         <a
           href="https://listado.mercadolibre.com.co/_Discount_40-100_Container_hot-sale#DEAL_ID=MCO20189&S=landingHubhot-sale&V=12&T=carousel&L=CARLIQUIDACION-DESDE-40-OFF&deal_print_id=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e&c_id=carousel&c_element_order=2&c_campaign=CARLIQUIDACION-DESDE-40-OFF&c_uid=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e"
           target="_blank"
-          class="carousel-item"
+          className="carousel-item"
         >
           <img
             decoding="async"
@@ -58,7 +58,7 @@ export const Home = () => {
         <a
           href="https://listado.mercadolibre.com.co/_Container_hot-sale-fullq#DEAL_ID=MCO20189&S=landingHubhot-sale&V=13&T=carousel&L=CARFULL-&deal_print_id=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e&c_id=carousel&c_element_order=3&c_campaign=CARFULL-&c_uid=e5ef9f20-d8c4-11ee-9ee2-4fb0eb11bf3e"
           target="_blank"
-          class="carousel-item"
+          className="carousel-item"
         >
           <img
             decoding="async"
@@ -69,7 +69,7 @@ export const Home = () => {
         <a
           href="https://www.mercadolibre.com.co/ofertas/cuotas-bancos#DEAL_ID=MCO20189&S=landingHubhot-sale&V=14&T=carousel&L=CARCUOTAS-0-INTERES&deal_print_id=c498de90-d8bf-11ee-8c88-b9623226b624&c_id=carousel&c_element_order=4&c_campaign=CARCUOTAS-0-INTERES&c_uid=c498de90-d8bf-11ee-8c88-b9623226b624"
           target="_blank"
-          class="carousel-item"
+          className="carousel-item"
         >
           <img
             decoding="async"
@@ -80,7 +80,7 @@ export const Home = () => {
         <a
           href="https://listado.mercadolibre.com.co/_Container_hot-sale-enviosgratisq#DEAL_ID=MCO20189&S=landingHubhot-sale&V=15&T=carousel&L=CARENVIOS-GRATIS&deal_print_id=c498de90-d8bf-11ee-8c88-b9623226b624&c_id=carousel&c_element_order=5&c_campaign=CARENVIOS-GRATIS&c_uid=c498de90-d8bf-11ee-8c88-b9623226b624"
           target="_blank"
-          class="carousel-item"
+          className="carousel-item"
         >
           <img
             decoding="async"
