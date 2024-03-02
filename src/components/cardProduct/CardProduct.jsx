@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import truckIcon from "../../assets/truck.svg";
+import { formatNumber } from "../../utils/formatPrice";
 import "./CardProduct.scss";
 
 export const CardProduct = ({ item }) => {
   const navigate = useNavigate();
+
   return (
     <div
       onClick={() => navigate(`/items/${item.id}`)}
@@ -15,10 +17,10 @@ export const CardProduct = ({ item }) => {
       </div>
       <div className="info">
         <div className="price">
-          <h2>$ {item.price.amount}</h2>
+          <h2>$ {formatNumber(item.price.amount)}</h2>
           {item.free_shipping && (
             <span className="badge">
-              <img src={truckIcon} alt="" />
+              <img src={truckIcon} alt="truck" />
             </span>
           )}
         </div>

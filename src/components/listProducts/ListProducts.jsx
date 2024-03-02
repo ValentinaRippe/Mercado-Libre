@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { useFetchSearchProducts } from "../../hooks/useFetchSearchProducts";
 import { CardProduct } from "../cardProduct/CardProduct";
 import { Loader } from "../loader/Loader";
+import { NotFound } from "../notFound/NotFound";
 import "./ListProducts.scss";
 
 export const ListProducts = ({ param }) => {
@@ -25,7 +26,7 @@ export const ListProducts = ({ param }) => {
           ? products?.map((item) => (
               <CardProduct key={item.id} item={item} />
             ))
-          : !isLoading && "No Products Found"}
+          : !isLoading && <NotFound />}
       </div>
     </div>
   );
