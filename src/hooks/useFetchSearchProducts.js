@@ -1,17 +1,21 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
 import { getSearchProducts } from "../services/products";
 
-export const useFetchProducts = (searchText) => {
+export const useFetchSearchProducts = (searchText) => {
   const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState([])
   const [isLoading, setIsLoading] = useState(true);
 
   const getProducts = async () => {
+    setProducts([]);
+    setIsLoading(true);
     const res = await getSearchProducts(searchText);
-    if (res) {
+    try {
       setProducts(res.items);
+      setCategories(res.categories)
       setIsLoading(false);
-    } else {
+    } catch (err) {
+      setIsLoading(false);
       console.log("Error");
     }
   };
@@ -22,6 +26,7 @@ export const useFetchProducts = (searchText) => {
 
   return {
     products,
+    categories,
     isLoading,
   };
 };

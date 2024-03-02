@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-
+import iconSearch from "../../assets/search.svg";
+import "./Searcher.scss";
 export const Searcher = ({ onSearchValueChange }) => {
   const [searchValue, setSearchValue] = useState("");
 
@@ -10,15 +11,21 @@ export const Searcher = ({ onSearchValueChange }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (searchValue.trim().length <= 1) return;
     onSearchValueChange(searchValue.trim());
     setSearchValue("");
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <input type="text" placeholder="Buscar..." value={searchValue} onChange={onInputChange} />
-      <button type="submit">Buscar</button>
+    <form className="form-search" onSubmit={onSubmit}>
+      <input
+        type="text"
+        placeholder="Buscar..."
+        value={searchValue}
+        onChange={onInputChange}
+      />
+      <button type="submit">
+        <img src={iconSearch} alt="Buscar" />
+      </button>
     </form>
   );
 };

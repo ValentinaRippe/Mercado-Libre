@@ -1,0 +1,32 @@
+@import "../../index";
+
+.products-list {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .categories {
+    color: $subtitle-history-color;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .products-list {
+    .list {
+      padding: 2rem;
+    }
+    .categories {
+      padding: 0 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1284px) {
+  .products-list {
+    .list,
+    .categories {
+      width: 60%;
+    }
+  }
+}
