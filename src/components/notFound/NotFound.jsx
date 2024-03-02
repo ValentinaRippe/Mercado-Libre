@@ -1,5 +1,6 @@
 import notfound from "../../assets/notFound.svg";
 import "./NotFound.scss";
+
 export const NotFound = () => {
   return (
     <div className="content">
