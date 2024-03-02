@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useFetchSearchProducts } from "../../hooks/useFetchSearchProducts";
-import { CardProduct } from "../CardProduct/CardProduct";
-import { Loader } from "../Loader/Loader";
-import { NotFound } from "../NotFound/NotFound";
+import { CardProduct } from "../cardProduct/CardProduct";
+import { Loader } from "../loader/Loader";
+import { NotFound } from "../notFound/NotFound";
 import "./ListProducts.scss";
 
 export const ListProducts = ({ param }) => {
@@ -11,11 +11,7 @@ export const ListProducts = ({ param }) => {
 
   return (
     <div className="products-list">
-      {isLoading && (
-        <div className="loader">
-          <Loader />
-        </div>
-      )}
+      {isLoading && <Loader />}
       {categories.length > 0 && !isLoading && (
         <small className="categories">
           {categories.join(" > ")}

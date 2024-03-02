@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 1rem;
 
   .categories {
     color: $subtitle-history-color;
@@ -13,9 +14,7 @@
 
 @media screen and (min-width: 640px) {
   .products-list {
-    .list {
-      padding: 2rem;
-    }
+    .list,
     .categories {
       padding: 0 2rem;
     }
