@@ -10,8 +10,8 @@ Testing realizado con Jest.
 
 ### Beackend - Express NodeJs
 
-- [Despliegue aquí](https://mercado-libre-vl.netlify.app/#/)
-- [Repositorio aquí](https://mercado-libre-vl.netlify.app/#/)
+- [Despliegue aquí](https://mercado-libre-back-1.onrender.com/api/items?q=apple)
+- [Repositorio aquí](https://github.com/ValentinaRippe/Mercado-Libre-Back)
 
 ## Aplicación
 
