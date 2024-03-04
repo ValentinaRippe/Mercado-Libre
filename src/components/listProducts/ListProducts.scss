@@ -7,6 +7,10 @@
   flex-direction: column;
   gap: 1rem;
 
+  .list {
+    width: 100%;
+  }
+
   .categories {
     color: $subtitle-history-color;
   }
